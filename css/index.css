@@ -1,0 +1,25 @@
+body {
+	background: #f3f3f4;
+}
+
+.container-results {
+	width: 1100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.container-graph {
+	width: 1100px;
+}
+
+.steps_container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+canvas {
+	margin-bottom: 30px;
+}

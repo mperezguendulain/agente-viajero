@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Agente Viajero</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/fileinput.min.css">
+		<link rel="stylesheet" type="text/css" href="css/core.css">
+		<link rel="stylesheet" type="text/css" href="css/icons.css">
+		<link rel="stylesheet" type="text/css" href="css/components.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="icon" type="image/png" href="img/travel.png" />
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+		<script src="js/loader.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="js/fileinput.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback();
+		</script>
+	</head>
+	<body>
+		<div class="card-box" id="card_input_parameters">
+			<h4 class="m-t-0 header-title"><b>Parametros de Entrada</b></h4>
+
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<form class="form-horizontal" role="form" onsubmit="return startAlgorithm()">
+						<div class="form-group">
+							<label class="col-md-2 control-label">Puntos</label>
+							<div class="col-md-10">
+								<input id="fileInput" type="file" class="file" data-show-preview="false" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="col-md-4 control-label"># de Iteraciónes</label>
+								<div class="col-md-8">
+									<input id="txtNumIteraciones" type="text" class="form-control" pattern="[0-9]*" required value="100">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-4 control-label">Cada N iteraciones</label>
+								<div class="col-md-8">
+									<input id="numCadaPIteraciones" type="number" class="form-control" required value="10">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="col-md-4 control-label">T</label>
+								<div class="col-md-8">
+									<input id="numT" type="number" class="form-control" required value="100">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-4 control-label">T*</label>
+								<div class="col-md-8">
+									<input id="txtFactorT" type="text" class="form-control" pattern="[0-9]+[.][0-9]+" required value="0.95">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+								<button class="col-md-4 col-md-offset-4 btn btn-default">Iniciar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<center id='main-container'>
+		</center>
+		<script type="text/javascript" src="js/config.js"></script>
+		<script type="text/javascript" src="js/draw.js"></script>
+		<script type="text/javascript" src="js/file.js"></script>
+		<script type="text/javascript" src="js/agente_viajero.js"></script>
+	</body>
+</html>
