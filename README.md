@@ -1,6 +1,5 @@
 # Problema del Agente Viajero solucionado con el algoritmo de Recocido Simulado
 
-## Explicación de archivos js 
 **Simulated annealing (SA)** (recocido simulado, cristalización simulada, templado simulado o enfriamiento simulado) es un algoritmo de búsqueda meta-heurística para problemas de optimización global; el objetivo general de este tipo de algoritmos es encontrar una buena aproximación al valor óptimo de una función en un espacio de búsqueda grande. A este valor óptimo se lo denomina "óptimo global".
 
 Aplicación de Recocido Simulado
@@ -9,6 +8,7 @@ Aplicación de Recocido Simulado
 Avance Optimo
 ![Recocido Simulado](/recocido-simulado-grafica.png)
 
+## Explicación de archivos js 
  - file.js
 	 - Se encuentran las funciones para leer el archivo de puntos, tranformarlos a un arreglo de objetos de tipo {x, y} y tambien la funcion que inicia el algoritmo de Recocido Simulado. 
  - config.js
