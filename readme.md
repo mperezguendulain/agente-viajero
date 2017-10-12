@@ -6,3 +6,4 @@ agente_viajero.js
 	Se encuentra el algoritmo de Recocido Simulado y funciones auxiliares para dicho algoritmo.
 draw.js
 	Se encuentran las funciones que se encargan de pintar las ciudades(puntos), las rutas, pintar el la grafica con el avance del óptimo durante todas las iteraciónes realizadas del algoritmo.
+[embed]Guia de Usuario Agente Viajero.pdf[/embed]
