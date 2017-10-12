@@ -17,3 +17,23 @@ Avance Optimo
 	 - Se encuentra el algoritmo de Recocido Simulado y funciones auxiliares para dicho algoritmo.
  - draw.js
 	 - Se encuentran las funciones que se encargan de pintar las ciudades(puntos), las rutas, pintar el la grafica con el avance del óptimo durante todas las iteraciónes realizadas del algoritmo.
+	 
+### Parametros de Entrada
+
+ - Puntos
+	 - Archivo que contiene los puntos con los que trabajará el algoritmo.
+ - \# de Iteraciones
+	 - Es el número de iteraciones que realiza el algoritmo de Recocido Simulado.
+ - Cada N iteraciones
+	 - Es el número que indicará cada cuando pintar la mejor solución hasta ese momento.
+ - T
+	 - Representa la temperatura en el algoritmo de Recocido Simulado.
+ - T*
+	 - Es el factor por el cual se multiplicará T para que su temperatura vaya decreciendo.
+
+### Ejemplo de Archivo de puntos
+
+    2 43
+    43 12
+    243 13
+    367 54
